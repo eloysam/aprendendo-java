@@ -29,5 +29,10 @@ public class Produto {
         this.valor = valor;
     }
 
+    public String toString(){
+        return "Id:" + this.id + "\nNome:" + this.nome + "\nQtde:" + this.qtde + "\nValor:" + this.valor;
+    }
+
+    
     
 }
