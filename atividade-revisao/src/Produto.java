@@ -46,33 +46,42 @@ public class Produto {
     }
     @Override
     public boolean equals(Object obj) {
+
         if (this == obj)
             return true;
+
         if (obj == null)
             return false;
+
         if (getClass() != obj.getClass())
             return false;
+
         Produto other = (Produto) obj;
+
         if (id == null) {
             if (other.id != null)
                 return false;
         } else if (!id.equals(other.id))
             return false;
+
         if (nome == null) {
             if (other.nome != null)
                 return false;
         } else if (!nome.equals(other.nome))
             return false;
+
         if (qtde == null) {
             if (other.qtde != null)
                 return false;
         } else if (!qtde.equals(other.qtde))
             return false;
+
         if (valor == null) {
             if (other.valor != null)
                 return false;
         } else if (!valor.equals(other.valor))
             return false;
+            
         return true;
     }
 
