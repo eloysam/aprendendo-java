@@ -34,6 +34,10 @@ public class Produto {
     }
 
 /******************************** HASHCODE E EQUALS ************************************************************************************** */
+
+/*
+ * O Equals() é um método que vem da classe Object e na sua assinatura espera um objeto do tipo Object como parâmetro.
+ */
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -81,7 +85,7 @@ public class Produto {
                 return false;
         } else if (!valor.equals(other.valor))
             return false;
-            
+
         return true;
     }
 
